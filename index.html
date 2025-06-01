@@ -90,6 +90,38 @@
             background: linear-gradient(90deg, transparent 0%, var(--primary-blue) 20%, var(--dark-blue) 50%, var(--primary-blue) 80%, transparent 100%);
         }
 
+        #prevBtn {
+            left: 20px;
+        }
+
+        #nextBtn {
+            right: 20px;
+        }
+        
+        /* Responsive styles for navigation buttons */
+        @media screen and (max-width: 768px) {
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+            }
+            
+            #prevBtn {
+                left: 10px;
+            }
+            
+            #nextBtn {
+                right: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .nav-btn {
+                padding: 6px 10px;
+                font-size: 0.8rem;
+                bottom: 15px;
+            }
+        }
+
         .slide::after {
             content: '';
             position: absolute;
@@ -1169,44 +1201,7 @@
             </div>
         </div>
 
-        <!-- Slide 7: HarmonAIze Repository -->
-        <div class="slide">
-            <div class="slide-title">HarmonAIze Project Overview</div>
-            <h2>Climate-Health Data Harmonization Toolkit</h2>
-            <div class="demo-section">
-                <h3>Project Mission</h3>
-                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); margin-bottom: var(--spacing-lg);">Open-source toolkit for harmonizing climate and health data in resource-constrained research settings</p>
-                
-                <div class="diagram-container">
-                    <div class="data-flow-diagram">
-                        <div class="data-source">Climate Data Sources</div>
-                        <div class="data-source">Health Data Sources</div>
-                        <div class="data-mapping">
-                            <div class="mapping-column">
-                                <h4>Original Schema</h4>
-                                <div class="mapping-item">Temperature (°C)</div>
-                                <div class="mapping-item">Precipitation (mm)</div>
-                                <div class="mapping-item">Humidity (%)</div>
-                                <div class="mapping-item">Disease Cases</div>
-                            </div>
-                            <div class="mapping-column">
-                                <h4>Harmonized Schema</h4>
-                                <div class="mapping-item">Standard Temperature</div>
-                                <div class="mapping-item">Normalized Rainfall</div>
-                                <div class="mapping-item">Relative Humidity</div>
-                                <div class="mapping-item">Case Incidence Rate</div>
-                            </div>
-                        </div>
-                        <div class="harmonized-data">Harmonized Climate-Health Dataset</div>
-                    </div>
-                </div>
-                <p style="margin-top: var(--spacing-lg); font-size: clamp(0.9rem, 2vw, 1.1rem); text-align: center;">
-                    <strong>Repository:</strong> <a href="https://github.com/drnicholasbrink/HarmonAIze" target="_blank" style="color: #3b82f6; text-decoration: none;">github.com/drnicholasbrink/HarmonAIze</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Slide 8: Live Demonstration -->
+        <!-- Slide 7: Live Demonstration -->
         <div class="slide">
             <div class="slide-title">Live Demonstration</div>
             <h2>AI-Assisted Presentation Development</h2>
