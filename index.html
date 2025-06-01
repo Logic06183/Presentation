@@ -33,6 +33,7 @@
             top: 0;
             left: 0;
             background: rgba(255, 255, 255, 0.05);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             margin: 20px;
@@ -263,7 +264,31 @@
             padding: 10px 20px;
             border-radius: 20px;
             font-size: 1rem;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+        }
+        
+        .demo-repository {
+            margin: 20px 0;
+            background-color: rgba(78, 205, 196, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #4ecdc4;
+        }
+        
+        .demo-repository h3 {
+            color: #ffd93d;
+            margin-bottom: 10px;
+        }
+        
+        .demo-repository a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        .demo-repository .repo-note {
+            font-style: italic;
+            margin-top: 5px;
         }
 
         .best-practices {
@@ -563,13 +588,24 @@
                     <li><strong>Git Workflow:</strong> AI-assisted branching, commits, and merge conflict resolution</li>
                     <li><strong>Frontend Development:</strong> Create a responsive data input form with validation</li>
                     <li><strong>Backend Integration:</strong> Develop API endpoints to handle new data structures</li>
-                    <li><strong>Test Generation:</strong> Automated unit and integration test creation</li>
-                    <li><strong>Documentation:</strong> Real-time API documentation and code comments</li>
                 </ol>
-                
-                <div style="background: rgba(255, 193, 61, 0.2); padding: 20px; border-radius: 10px; margin-top: 25px;">
-                    <strong>💡 Pro Tip:</strong> We'll demonstrate how AI can understand project context and suggest improvements that align with existing code patterns.
+
+                <div class="demo-repository">
+                    <h3>🔗 Demo Repository</h3>
+                    <p><a href="https://github.com/drnicholasbrink/HarmonAIze" target="_blank" rel="noopener">https://github.com/drnicholasbrink/HarmonAIze</a></p>
+                    <p class="repo-note">Click to open the demo repository during the presentation</p>
                 </div>
+                
+                <ol class="demo-steps">
+                    <li>Setup a new project with appropriate AI integrations</li>
+                    <li>Write new feature with AI assistance</li>
+                    <li>Refactor existing code using AI pair programming</li>
+                    <li>Debug an issue using AI-powered tools</li>
+                    <li>Document the changes with AI help</li>
+                </ol>
+                <p class="demo-tip">
+                    <strong>💡 Pro Tip:</strong> We'll demonstrate how AI can understand project context and suggest improvements that align with existing code patterns.
+                </p>
             </div>
         </div>
 
