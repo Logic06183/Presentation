@@ -1171,6 +1171,169 @@
                 left: 20px;
                 font-size: 0.75rem;
             }
+            
+            /* Responsive diagrams */
+            .workflow-diagram {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            
+            .venn-diagram {
+                width: 300px;
+                height: 200px;
+            }
+            
+            .venn-circle {
+                width: 130px;
+                height: 130px;
+                font-size: 0.9rem;
+            }
+            
+            .venn-circle.left {
+                left: 15px;
+            }
+            
+            .venn-circle.right {
+                right: 15px;
+            }
+            
+            .venn-intersection {
+                width: 90px;
+                height: 50px;
+                font-size: 0.8rem;
+                padding: 5px;
+            }
+            
+            .data-flow-diagram {
+                width: 100%;
+            }
+            
+            .data-mapping {
+                flex-direction: column;
+            }
+            
+            .mapping-column {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        
+        /* Diagram Container */
+        .diagram-container {
+            margin: 25px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        /* Workflow Diagram */
+        .workflow-diagram {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        .workflow-step {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(16, 185, 129, 0.2));
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .workflow-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .workflow-step h4 {
+            margin-top: 0;
+            color: #f8f8f8;
+            font-size: 1.1rem;
+        }
+        
+        .workflow-step p {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Resource Category */
+        .resource-category {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .resource-category h3, .resource-category h4 {
+            margin-top: 0;
+            color: #f8f8f8;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        /* Venn Diagram Styles */
+        .venn-diagram {
+            position: relative;
+            width: 340px;
+            height: 220px;
+            margin: 30px auto;
+        }
+        
+        .venn-circle {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .venn-circle.left {
+            left: 20px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.7), rgba(59, 130, 246, 0.4));
+            z-index: 1;
+        }
+        
+        .venn-circle.right {
+            right: 20px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.7), rgba(16, 185, 129, 0.4));
+            z-index: 1;
+        }
+        
+        .venn-intersection {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 110px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            z-index: 5;
+            background: rgba(0, 0, 0, 0.5);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 10px 5px;
+            font-size: 0.9rem;
+            line-height: 1.2;
         }
     </style>
 </head>
